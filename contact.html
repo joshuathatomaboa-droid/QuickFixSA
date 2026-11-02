@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Contact Us | QuickFix SA</title>
+    <meta name="description" content="Contact QuickFix SA for home maintenance. View our operating hours, two locations in Gauteng, and send us a message.">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+</head>
+<body>
+    <header>
+        <div class="logo">QuickFix SA</div>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html">Our Services</a></li>
+                <li><a href="enquiry.html">Request a Service</a></li>
+                <li><a href="contact.html" class="active">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Contact Us</h2>
+        <p>We have two main hubs servicing the Gauteng area. Reach out to the one closest to you.</p>
+        
+        <div class="grid-layout">
+            <!-- Location 1: Johannesburg -->
+            <div class="card">
+                <h3>Johannesburg Branch (Head Office)</h3>
+                <p><strong>Phone:</strong> 011 123 4567</p>
+                <p><strong>Emergency:</strong> 082 999 8888</p>
+                <p><strong>Email:</strong> joburg@quickfixsa.co.za</p>
+                <p><strong>Address:</strong> 123 Main Street, Johannesburg CBD, 2001</p>
+            </div>
+
+            <!-- Location 2: Pretoria -->
+            <div class="card">
+                <h3>Pretoria Branch</h3>
+                <p><strong>Phone:</strong> 012 987 6543</p>
+                <p><strong>Emergency:</strong> 083 111 2222</p>
+                <p><strong>Email:</strong> pretoria@quickfixsa.co.za</p>
+                <p><strong>Address:</strong> 456 Lynnwood Road, Pretoria East, 0081</p>
+            </div>
+        </div>
+
+        <!-- Operating Hours -->
+        <div class="card">
+            <h3>Operating Hours</h3>
+            <ul>
+                <li>Monday - Friday: 08:00 &ndash; 17:00</li>
+                <li>Saturday: 08:00 &ndash; 13:00</li>
+                <li>Sunday: Closed (Emergency call-outs only)</li>
+            </ul>
+        </div>
+
+        <!-- Interactive Map -->
+        <div class="card">
+            <h3>Find Us on the Map</h3>
+            <div id="map"></div>
+        </div>
+
+        <h2 style="margin-top: 40px;">Send a Message</h2>
+        <div id="form-success" class="success-msg"></div>
+        
+        <form id="contact-form" novalidate>
+            <div class="form-group">
+                <label for="c-name">Your Name:</label>
+                <input type="text" id="c-name" placeholder="Your name" required>
+                <span class="error-msg" id="c-name-error">Please enter your name.</span>
+            </div>
+            <div class="form-group">
+                <label for="c-email">Your Email:</label>
+                <input type="email" id="c-email" placeholder="Your email" required>
+                <span class="error-msg" id="c-email-error">Please enter your email.</span>
+            </div>
+            <div class="form-group">
+                <label for="c-message">Message:</label>
+                <textarea id="c-message" rows="4" placeholder="How can we help?" required></textarea>
+                <span class="error-msg" id="c-message-error">Please type a message.</span>
+            </div>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 QuickFix SA. All rights reserved.</p>
+    </footer>
+
+    <!-- Leaflet Map JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
