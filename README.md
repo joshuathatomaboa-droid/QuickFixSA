@@ -32,48 +32,37 @@ This is a 5-page website for QuickFix SA, a proposed home maintenance company ba
 - **Scroll Animations:** Cards and sections fade in smoothly as the user scrolls down the page.
 - **SEO:** Unique title tags, meta descriptions, and keywords on all pages. Includes `robots.txt` and `sitemap.xml`.
 
-## Changelog
-Part 1: HTML Foundation
+# Changelog
 
-Created a 5-page website structure (Home, About Us, Our Services, Request a Service, Contact Us) using semantic HTML5 tags (<header>, <nav>, <main>, <section>, <footer>).
+## Part 1: HTML Foundation
+- Created a 5-page website structure (`index.html`, `about.html`, `services.html`, `enquiry.html`, `contact.html`) using semantic HTML5 tags (`<header>`, `<nav>`, `<main>`, `<section>`, `<footer>`).
+- Implemented a horizontal navigation menu and detailed content for a home maintenance company.
+- Added the required form on the Enquiry page and two physical locations (Johannesburg and Pretoria) on the Contact page.
+- Included tables, lists, and descriptive `alt` text for all images.
 
-Implemented a horizontal navigation menu and detailed content for a home maintenance company.
+## Part 2: CSS Styling and Responsive Design
+- Created an external stylesheet (`css/style.css`) and linked it to all HTML pages.
+- Added Google Fonts (Roboto) for a professional look and implemented a CSS reset.
+- Styled all pages using **CSS Grid** for the service cards, forms, and contact layouts.
+- Added a **responsive hamburger menu** for mobile devices, complete with a toggle function.
+- Implemented `srcset` and `sizes` on images to ensure they load correctly on different screen sizes.
+- Added hover effects, box shadows, and pseudo-classes to enhance the visual design.
 
-Added the required form on the Enquiry page and two physical locations (Johannesburg and Pretoria) on the Contact page.
-
-Included tables, lists, and descriptive alt text for all images.
-
-Part 2: CSS Styling and Responsive Design
-
-Created an external stylesheet (css/style.css) and linked it to all pages.
-
-Added Google Fonts (Roboto) for a professional look and implemented a CSS reset.
-
-Styled all pages using CSS Grid for the service cards, forms, and contact layouts.
-
-Added a responsive hamburger menu for mobile devices, complete with a toggle function.
-
-Implemented srcset and sizes on images to ensure they load correctly on different screen sizes.
-
-Added hover effects, box shadows, and pseudo-classes to enhance the visual design.
-
-Part 3: JavaScript, SEO, and Deployment
-
-Interactive Elements: Added a FAQ accordion on the About page and a custom image gallery lightbox with Next/Prev arrows and Escape key support.
-
-Interactive Map: Replaced static iframes with a dynamic Leaflet map on the Contact page, featuring separate markers for the Johannesburg and Pretoria branches.
-
-Dynamic Content: Added a live search bar to the Services page that filters cards as the user types.
-
-Form Functionality: Implemented real-time validation for both forms (checking name, email format, phone, location, and message length). Added a simulated AJAX request (fakeAjaxSubmit) for a smoother user experience, and a mailto: email generator for the contact form.
-
-JS Animations: Added an Intersection Observer script to make page cards and sections fade in smoothly as the user scrolls.
-
-SEO: Added unique title tags, meta descriptions, and meta keywords to all 5 pages. Created robots.txt and sitemap.xml in the root directory.
-
-Deployment: Successfully deployed the final QuickFix SA website to Netlify.
-
-
+## Part 3: JavaScript, SEO, and Deployment
+- **Interactive Elements:** 
+  - Added a FAQ accordion on the About page.
+  - Added a custom image gallery lightbox with Next/Prev arrows and Escape key support.
+- **Interactive Map:** Replaced static iframes with a dynamic **Leaflet map** on the Contact page, featuring separate markers for the Johannesburg and Pretoria branches.
+- **Dynamic Content:** Added a **live search bar** to the Services page that filters cards as the user types.
+- **Form Functionality:** 
+  - Implemented real-time validation for both forms (checking name, email format, phone, location, and message length).
+  - Added a simulated AJAX request (`fakeAjaxSubmit`) for a smoother user experience.
+  - Added a `mailto:` email generator for the contact form.
+- **JS Animations:** Added an Intersection Observer script to make page cards and sections fade in smoothly as the user scrolls.
+- **SEO:** 
+  - Added unique title tags, meta descriptions, and meta keywords to all 5 pages.
+  - Created `robots.txt` and `sitemap.xml` in the root directory.
+- **Deployment:** Successfully deployed the final QuickFix SA website to Netlify.
 
 ## References
 Leaflet. (2026). *Leaflet Documentation*. Available at: https://leafletjs.com/ (Accessed: 2 November 2026)
