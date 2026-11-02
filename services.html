@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Our Services & Pricing | QuickFix SA</title>
+    <meta name="description" content="View our detailed home maintenance services: plumbing, electrical, painting, and general repairs in Gauteng. Transparent pricing included.">
+    
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="logo">QuickFix SA</div>
+        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
+        <nav>
+            <ul id="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="services.html" class="active">Our Services</a></li>
+                <li><a href="enquiry.html">Request a Service</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>What We Do</h2>
+        <p>We offer a comprehensive range of home maintenance services. Use the search bar below to quickly find what you need.</p>
+        
+        <!-- Search filter -->
+        <div class="search-box">
+            <input type="text" id="service-search" placeholder="Search for plumbing, electrical, painting...">
+        </div>
+
+        <!-- CSS Grid Layout -->
+        <div class="grid-layout">
+            <!-- Service 1 -->
+            <div class="service-card">
+                <img src="images/plumbing-service.webp" alt="Plumbing repairs" class="clickable-img">
+                <h3>Plumbing</h3>
+                <p>From emergency leaks to planned installations, we handle it all.</p>
+                <ul style="text-align: left; margin-top: 10px;">
+                    <li>Leaky taps & pipes</li>
+                    <li>Blocked drains</li>
+                    <li>Geyser replacements</li>
+                    <li>Toilet installations</li>
+                </ul>
+            </div>
+
+            <!-- Service 2 -->
+            <div class="service-card">
+                <img src="images/electrical-service.webp" alt="Electrical repairs" class="clickable-img">
+                <h3>Electrical Repairs</h3>
+                <p>Safe and compliant electrical work for your home.</p>
+                <ul style="text-align: left; margin-top: 10px;">
+                    <li>Faulty wiring</li>
+                    <li>DB board upgrades</li>
+                    <li>Light fittings</li>
+                    <li>Plug point installations</li>
+                </ul>
+            </div>
+
+            <!-- Service 3 -->
+            <div class="service-card">
+                <img src="images/painting-service.webp" alt="Painting services" class="clickable-img">
+                <h3>Painting & Plastering</h3>
+                <p>Give your home a fresh look with our professional painting team.</p>
+                <ul style="text-align: left; margin-top: 10px;">
+                    <li>Interior painting</li>
+                    <li>Exterior painting</li>
+                    <li>Damp proofing</li>
+                    <li>Wall crack repairs</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pricing Estimate Table -->
+        <section class="card" style="margin-top: 40px;">
+            <h2>Estimated Call-Out Fees</h2>
+            <p>Please note: These are base estimates. Final quotes are provided after assessing the job.</p>
+            <table style="width: 100%; border-collapse: collapse; margin-top: 15px;">
+                <thead>
+                    <tr style="background: #0A2540; color: white;">
+                        <th style="padding: 10px; border: 1px solid #ddd;">Service</th>
+                        <th style="padding: 10px; border: 1px solid #ddd;">Base Fee (ZAR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Standard Call-Out (Hourly)</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">R350</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Emergency Call-Out (After Hours)</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">R550</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 10px; border: 1px solid #ddd;">Geyser Replacement (Labour Only)</td>
+                        <td style="padding: 10px; border: 1px solid #ddd;">R800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <div id="lightbox" class="lightbox">
+        <button class="lightbox-close">&times;</button>
+        <img id="lightbox-img" src="" alt="Enlarged view">
+    </div>
+
+    <footer>
+        <p>&copy; 2026 QuickFix SA. All rights reserved.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
